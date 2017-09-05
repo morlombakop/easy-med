@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
+// Variables
+@import"variables";
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h3,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input,
+textarea,
+select {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  vertical-align: 0;
+}
+
+$text-size: 20px;
+$color-primary: #E95420;
+$padding: 100px;
+$text-color: #333;
+body {
+  color: $text-color;
+  background-color: #444;
+  font-size: $text-size;
+}
+
+.text-primary {
+  color: $color-primary !important;
+}
+
+.wrap-center {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.div-item-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.app-text-large {
+  font-size: $text-size + 4;
+}
+
+.padding-large {
+  padding: $padding;
+}
+
+.padding-top-large {
+  padding-top: $padding;
+}
+
+.padding-bottom-large {
+  padding-bottom: $padding;
+}
+
+.padding-left-large {
+  padding-left: $padding;
+}
+
+.padding-right-large {
+  padding-right: $padding;
+}
+
+.bg-img-full {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+#home {
+  background-image: url(../img/home-bg-1.jpg);
+}
+
+.home-bg-cover {
+  background-color: rgba(255, 254, 254, 0.8);
+  height: 100vh;
+}
+
+.app-title {
+  font-size: $text-size + 30px;
+}
+
+.app-title-desc {
+  padding-bottom: 40px;
+  padding-top: 20px;
+  line-height: 35px;
+}
+
+.app-sign-in {
+  font-size: $text-size + 5px;
+  color: $text-color;
+  border: 1px solid $color-primary;
+  padding: 15px 20px;
+  border-radius: 20px;
+  &:hover {
+    text-decoration: none;
+    color: $color-primary !important;
+    background-color: rgba(255, 254, 254, 0.7);
+ }
+ 
+ &:visited, &:active {
+   color: $text-color;
+   text-decoration: none;
+}
+}
+
+.a:visited, .a:active .a:focus {
+  text-decoration: none !important;
+}
+
+#about,
+#insight,
+#advantage,
+#join {
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
+
+footer {
+  background-color: #444;
+  padding-top: $padding + 30px;
+  padding-bottom: $padding + 30px;
+}
+
+.section-header {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+#about {
+  background-color: darken(#fff, 5%);
+}
+
+#insight {
+  background-color: darken(#fff, 1%);
+}
+
+#advantage {
+  background-color: darken(#fff, 5%);
+}
+
+#join {
+  background-color: darken(#fff, 1%);
+}
+
+.section-sub-header {
+  padding-bottom: 40px;
+  font-style: oblique;
+  line-height: 40px;
+}
+
+.n-p-right {
+  padding-right: 0px !important;
+  margin-right: 0px !important;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.insight-sub-head {
+  padding-top: 130px;
+}
+
+.advantage-list {
+  padding-top: 25px;
+  font-size: 25px;
+}
+
+.n-p-left {
+  margin-left: 0px !important;
+  padding-left: 0px !important;
+}
+
+.wrap-author {
+  float: right;
+}
+
+.img-cicle {
+  display: block;
+  border-radius: 50%;
+}
+
+.wrap-footer {
+  color: #f5f5f5;
+  font-size: 16px;
+  padding-top: 30px;
+}
+
+.modal-dialog {
+  margin: 10vh auto 0px auto !important;
+}
+
+.modal-backdrop {
+  opacity: 0.5 !important;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: $color-primary;
+  border-color: darken($color-primary, 5%);
+  &:hover {
+    background-color: darken($color-primary, 5%);
+    border-color: darken($color-primary, 5%);
+    color: #fff !important;
+ }
+}
+
+.btn-secondary:hover, .btn:hover {
+  color: #333 !important;
+}
+
+.btn {
+  text-transform: uppercase;
+  &:hover {
+    color: #fff !important;
+ }
+}
+
+nav,
+.navbar {
+  border-radius: 0px !important;
+  background-color: $color-primary !important;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+main {
+  background-color: #fff;
+}
+
+.body-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.nav-link {
+  color: #fff !important;
+  padding-left: 25px !important;
+}
+
+.sidebar {
+ // width: 350px;
+  background-color: #666;
+  color: #fff;
+  height: 90vh;
+
+  .wrap-search {
+    padding: 25px;
+   }
+ 
+ ul li {
+   border-top: 1px solid #555;
+   padding: 10px 10px 10px 0px;
+   list-style: none;
+
+   &:hover {
+     background-color: #555;
+    }
+  }
+}
+
+.main-content {
+  padding-top:50px;
+  padding-left:50px;
+  padding-bottom:50px;
+  padding-right:15%;
+}
+
+.n-p-l-r{
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
+
+.error{
+	color: red;
+
+	ul li{
+		list-style: none;
+	}
+}
